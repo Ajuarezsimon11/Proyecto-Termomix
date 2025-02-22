@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+    .my-table th {
+        @apply border-2 border-custom-500 bg-custom-400 text-custom-100
+    }
+    
+    .my-table td {
+        @apply border-2 border-custom-500 bg-custom-100
+    }
+    
+    .my-button button {
+        @apply bg-custom-500 border-2 border-black text-custom-100
+    }
+    
+    .my-title h1 {
+        @apply text-3xl text-custom-500 font-bold
+    }
+}

@@ -1,0 +1,6 @@
+<h1 class="my-title">Recetas</h1>
+
+<input list="recipesList" placeholder="Selecciona una receta" id="input">
+<datalist *ngIf="dishes$ | async as dishes" id="recipesList" >
+    <option *ngFor="let dish of dishes" [value]="dish.title" [attr.data-dish-id]="dish.code"></option>
+</datalist>

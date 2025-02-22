@@ -1,0 +1,3 @@
+<h1 class="my-title">Receta</h1>
+<p *ngIf="recipes$ |async as recipe">{{recipe.recipe}}</p><br>
+<button type="submit" value="Volver" class="bg-custom-500 border-2 border-black text-custom-100" (click)="returnToPageDishes($event)">Volver</button>

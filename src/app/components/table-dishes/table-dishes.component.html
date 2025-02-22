@@ -1,0 +1,13 @@
+<h1 class="my-title">Platos</h1>
+<table class="my-table">
+    <thead>
+        <tr>
+            <th>Nombres</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="dishes$ | async as dishes">
+        <tr *ngFor="let dish of dishes">
+            <td routerLink="{{dish.code}}/recetas">{{dish.title}}</td>
+        </tr>
+    </tbody>
+</table>
